@@ -1,0 +1,126 @@
+.App {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.select-month {
+  margin-bottom: 1em;
+}
+
+.select-month select {
+  width: 20%;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  padding: 0 1em;
+}
+
+.create-btn {
+  background-color: rgba(42, 211, 42, 0.8);
+  color: white;
+  font-size: 1em;
+  padding: 0.75em;
+  border: none;
+  border-radius: 0.25em;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 5px 6px 0 rgba(0,0,0,0.19);
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+.create-btn:hover {
+  background-color: rgba(45, 184, 45, 0.8);;
+}
+
+.attended-btn {
+  background-color: rgb(69, 131, 245);
+  color: white;
+  font-size: 1em;
+  padding: 0.75em;
+  border: none;
+  border-radius: 0.2em;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1), 0 4px 6px 0 rgba(0,0,0,0.15);
+  margin: 1em;
+  width: 30%;
+  font-weight: 700;
+}
+
+.attended-btn:hover {
+  background-color: rgb(45, 113, 240);
+}
+
+#attended {
+  text-align: center;
+}
+
+/* BINGO BOARD */
+#board-container {
+  width: 80vw;
+  max-width: 80vh;
+  height: 80vw;
+  max-height: 80vh;
+  margin: 0 auto;
+  font-size: .8rem;
+  /* min-width: 500px; */
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1 1 20%;
+  margin: 1px;
+  box-sizing: border-box;
+  background-color: lightgray;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col:hover {
+  background-color: rgb(194, 193, 193);
+}
+
+.col:after {
+  content: "";
+  display: block;
+  padding-top: 16%
+}
+
+.col.attended {
+  background-color: lightskyblue;
+}
+
+.col.attended:hover {
+  background-color: rgb(125, 191, 232);
+}
+
+.col div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row.header .col {
+  background-color: black;
+  font-size: 5rem;
+  color: white;
+  padding: 0;
+}
+
+.row.header .col:after {
+  padding-top: 0;
+}
+
+.space-details {
+  text-align: left;
+  margin: 0 auto;
+  width: 60vw;
+  padding: 1em;
+  border: 1px solid lightgray;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+  border-radius: 0.25em;
+  background-color: rgba(228, 227, 227, 0.16)
+}
